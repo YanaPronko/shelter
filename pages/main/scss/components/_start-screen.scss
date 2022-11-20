@@ -1,0 +1,94 @@
+.start-screen {
+  padding-top: 60px;
+  background: url("../../../assets/icons/noise_transparent2x.png"), $background-start-screen;
+	&__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include media-desktop {
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+      padding-right: calc(100px + (20 - 100) * ((100vw - 767.98px) / (1240 - 767.98)));
+      padding-left: calc(99px + (20 - 99) * ((100vw - 767.98px) / (1240 - 767.98)));
+    }
+    @include media-tablet {
+      gap: 105px;
+      padding: 0 calc(10px + (100 - 10) * ((100vw - 320px) / (1240 - 320)));
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    max-width: calc(50% - 42px);
+    margin-top: 163px;
+    padding-right: 42px;
+     @include media-desktop {
+      padding-right: 0;
+      margin-top: 0;
+      max-width: calc(100% - 109px);
+      align-items: center;
+      margin: 0 auto;
+    }
+    @include media-tablet {
+      max-width: 100%;
+      align-items: center;
+      gap: 41px;
+    }
+  }
+  &__title {
+    max-width: 310px;
+    @include font(4.4rem, 130%);
+    color: $color-light;
+    @include media-desktop {
+      align-self: flex-start;
+    }
+    @include media-tablet {
+      max-width: 261px;
+      margin: 0 auto;
+      text-align: center;
+      @include font(2.5rem, 130%);
+      letter-spacing: 0.06em;
+    }
+	}
+	&__text {
+    @extend %font-additional;
+    @include font(1.5rem, 160%);
+    color: $color-dark-light;
+    @include media-desktop {
+      align-self: center;
+      // text-align: center;
+    }
+    @include media-tablet {
+      text-align: center;
+    }
+	}
+  &__img {
+    @include media-desktop {
+      display: block;
+      width: 100%;
+      max-width: 698px;
+      margin-left: calc(138px + (0 - 138) * ((100vw - 767.98px) / (1240 - 767.98)));
+    }
+    @include media-tablet {
+      width: 100%;
+      max-width: 569px;
+      margin-left: 0;
+      padding-left: calc(40px + (0 - 40) * ((100vw - 320px) / (1240 - 320)));
+    }
+// padding-left: 70px;
+  }
+}
+
+/*   @-moz-document url-prefix() {
+    .start-screen__title {
+      margin-bottom: 42px;
+    }
+    .start-screen__text {
+      margin-bottom: 42px;
+    }
+    .button_moz {
+      margin-bottom: 42px;
+    }
+  } */
+

@@ -1,0 +1,44 @@
+.header {
+  // position: relative;
+  padding-top: 60px;
+  @include media-desktop {
+    padding-top: 31px;
+  }
+  background: url("../../../assets/icons/noise_transparent2x.png"), $background-start-screen;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-tablet {
+      padding-right: 53px;
+      
+    }
+  }
+}
+.header__navigation {
+  @include media-desktop {
+    margin-left: 81px;
+  }
+  @include media-tablet {
+    margin-left: 0;
+  }
+}
+
+.pets__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0;
+  background: $color-light;
+  z-index: 50;
+}
+/* .sticky {
+  position: fixed;
+  width: 100%;
+} */
+/* @-moz-document url-prefix() {
+  .header__wrapper {
+    padding-right: 10px;
+  }
+} */

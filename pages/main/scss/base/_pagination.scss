@@ -1,0 +1,60 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 340px;
+  margin: 0 auto;
+  @include media-tablet {
+    gap: 10px;
+  }
+}
+
+.btn-pagination {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  @extend %transition;
+  
+}
+.number {
+  @include font(2rem, 115%);
+  background: $color-primary;
+  color: $color-btn-text;
+  cursor: auto;
+}
+.double-arrow_left {
+  background: url("../../../assets/icons/pagination/pag_double_left.svg") center no-repeat;
+  border: 2px solid $color-primary;
+  /* border: 2px solid $color-dark-light;
+  cursor: not-allowed; */
+}
+.one-arrow_left {
+  background: url("../../../assets/icons/pagination/pag_one_left.svg") center no-repeat;
+  border: 2px solid $color-primary;
+  /* border: 2px solid $color-dark-light;
+  cursor: not-allowed; */
+}
+.double-arrow_right {
+  background: url("../../../assets/icons/pagination/pag_double_right.svg") center no-repeat;
+  border: 2px solid $color-primary;
+  &:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
+
+  }
+}
+.one-arrow_right {
+  background: url("../../../assets/icons/pagination/pag_one_right.svg") center no-repeat;
+  border: 2px solid $color-primary;
+  &:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
+  }
+}
+.disabled {
+  pointer-events: none;
+  background-color: transparent;
+  border: 2px solid $color-dark-light;
+  cursor: not-allowed;
+}

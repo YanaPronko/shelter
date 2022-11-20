@@ -1,0 +1,106 @@
+.donate{
+  background: $color-light-section-shadow;
+}
+.donate__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  @include media-desktop {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+  @include media-tablet{
+    gap: 42px;
+  }
+}
+.donate__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 380px;
+  @include media-desktop {
+    padding: 0 calc(164px + (0 - 164) * ((100vw - 767.98px) / (1240 - 767.98)));
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  @include media-tablet {
+    align-items: center;
+    padding: 0 10px;
+
+  }
+}
+.donate__title {
+  line-height: 129%;
+}
+.button-description {
+  @include font(1.5rem, 110%);
+  letter-spacing: 0.06em;
+  color: $color-h2;
+  @include media-tablet {
+    @include font(1.5rem, 160%);
+    letter-spacing: 0;
+  }
+}
+.button__donate {
+  display: flex;
+  align-items: center;
+  width: 349px;
+  height: 43px;
+  padding: 10px 15px;
+  border-radius: 9px;
+  a {
+    padding: 0;
+  }
+  @include media-desktop {
+    margin: 0;
+  }
+  @include media-tablet {
+    width: 281px;
+  }
+  .bank__number {
+    @include font(2rem, 115%);
+    letter-spacing: $letter-spacing;
+    color: $color-h2;
+    @include media-tablet {
+      @include font(1.5rem, 110%);
+    }
+  }
+}
+.ico__card {
+  width: 30px;
+  height: 23px;
+  margin-right: 15px;
+  background: url("../../../assets/icons/credit_card.svg");
+  background-size: 30px 23px;
+}
+.donate__text {
+  @extend %font-italic;
+  @include font(1.2rem, 150%);
+  font-style: italic;
+  color: $color-dark-medium;
+
+}
+.donate__pet {
+  @include media-tablet {
+    display: block;
+    width: 100%;
+    padding: 0 calc(20px + (0 - 20) * ((100vw - 320px) / (1240 - 320)));
+    max-width: 505px;
+  }
+}
+
+/* @-moz-document url-prefix() {
+  .donate__title {
+    margin-bottom: 20px;
+  }
+  .button-description {
+    margin-bottom: 20px;
+  }
+  .button__donate {
+    margin-bottom: 20px;
+  }
+  .donate__pet {
+    margin-right: 30px;
+  }
+} */

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Arial Regular';
+    font-display: swap;
+    src: url('../../../assets/fonts/ArialMT.eot');
+    src: url("../../../assets/fonts/ArialMT.eot") format('embedded-opentype'),
+    url('../../../assets/fonts/ArialMT.woff') format('woff'),
+    url('../../../assets/fonts/ArialMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Arial Italic';
+    font-display: swap;
+    src: url('../../../assets/fonts/Arial-ItalicMT.eot');
+    src: url('../../../assets/fonts/Arial-ItalicMT.eot') format('embedded-opentype'),
+    url("../../../assets/fonts/Arial-ItalicMT.woff") format('woff'),
+    url('../../../assets/fonts/Arial-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Georgia Regular';
+    font-display: swap;
+    src: url('../../../assets/fonts/Georgia.eot');
+    src: url('../../../assets/fonts/Georgia.eot') format('embedded-opentype'),
+    url('../../../assets/fonts/Georgia.woff') format('woff'),
+    url('../../../assets/fonts/Georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Georgia Italic';
+    font-display: swap;
+    src: url('../../../assets/fonts/Georgia-Italic.eot');
+    src: url('../../../assets/fonts/Georgia-Italic.eot') format('embedded-opentype'),
+    url('../../../assets/fonts/Georgia-Italic.woff') format('woff'),
+    url('../../../assets/fonts/Georgia-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Georgia Bold';
+    font-display: swap;
+    src: url('../../../assets/fonts/Georgia-Bold.eot');
+    src: url('../../../assets/fonts/Georgia-Bold.eot') format('embedded-opentype'),
+    url('../../../assets/fonts/Georgia-Bold.woff') format('woff'),
+    url('../../../assets/fonts/Georgia-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }

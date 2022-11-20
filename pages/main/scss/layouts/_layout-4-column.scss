@@ -1,0 +1,20 @@
+.layout-4-column {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  >* {
+    flex-basis: calc(25% - 40px);
+  }
+  @include media-desktop {
+    justify-content: center;
+    column-gap: calc(40px + (0 + 40) * ((100vw - 767.98px) / (1240 - 767.98)));
+  }
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+}

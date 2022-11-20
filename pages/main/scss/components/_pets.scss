@@ -1,0 +1,24 @@
+.pets__wrapper {
+  margin: 60px 0;
+  @include media-desktop {
+    margin: 0;
+    padding: 30px calc(64px + (0 + 64) * ((100vw - 767.98px) / (1240 - 767.98))) 40px calc(64px + (0 + 64) * ((100vw - 767.98px) / (1240 - 767.98)));
+  }
+  @include media-tablet {
+    padding: 42px calc(15px + (64 + 15) * ((100vw - 320px) / (1240 - 320)));
+    // width: 100%;
+  }
+}
+
+.pet-block {
+  &:hover {
+    .button_transparent {
+      background-color: $color-primary-light;
+    }
+  }
+}
+.pet-block_hidden {
+  @include media-desktop {
+    display: none;
+  }
+}

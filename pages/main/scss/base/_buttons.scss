@@ -1,0 +1,35 @@
+.button {
+  width: 207px;
+  height: 52px;
+  @include font(1.7rem, 130%);
+  text-align: center;
+  border-radius: 100px;
+  border: none;
+  @extend %transition;
+ 
+  a {
+    color: $color-btn-text;
+    padding: 15px 45px;
+  }
+  &:hover {
+    background: $color-primary-light;
+    border: none;
+  }
+   
+	&_colored {
+    // padding: 15px 45px;
+    background: $color-primary;
+    letter-spacing: $letter-spacing;
+    @include media-desktop {
+      margin: 0 auto;
+    }
+	}
+  &_transparent {
+    a {
+      padding: 13px 45px;
+    }
+    width: 187px;
+    background: transparent;
+    border: 2px solid $color-primary;
+  }
+}

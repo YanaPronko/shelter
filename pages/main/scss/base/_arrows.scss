@@ -1,0 +1,49 @@
+.ico-arrow {
+  width: 52px;
+  height: 52px;
+  border: 2px solid $color-primary;
+  border-radius: 50%;
+  @extend %transition;
+  &:hover {
+    background-color: $color-primary-light;
+    cursor: pointer;
+    border: 2px solid $color-primary-light;
+  }
+}
+.ico-arrow_prev {
+  background: url("../../../assets/icons/arrow_left.svg") center no-repeat;
+  @include media-tablet {
+    order: 1;
+  }
+}
+.ico-arrow_next {
+  background: url("../../../assets/icons/arrow_right.svg") center no-repeat;
+  @include media-tablet {
+    order: 1;
+  }
+}
+
+.arrow_hidden {
+  @include media-tablet {
+    display: none;
+  }
+}
+.arrow__container {
+  display: none;
+  @include media-tablet {
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+  }
+}
+
+.ico-arrow_next_hidden {
+  @include media-tablet {
+    display: block;
+  }
+}
+.ico-arrow_prev_hidden {
+  @include media-tablet {
+    display: block;
+  }
+}

@@ -1,0 +1,102 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active { 
+	outline: none;
+}
+
+a:focus, a:active { 
+	outline: none;
+}
+
+nav, section, article, footer, header, aside {
+	display: block;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 12px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input, button, textarea { 
+	font-family: inherit;
+}
+input::-ms-clear { 
+	display: none;
+}
+button { 
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding:0;
+	border:0;
+}
+a, a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size:inherit;
+	font-weight: 400;
+}
+/*--------------------*/
+
+html {
+  font-size: 10px;
+	scroll-behavior: smooth;
+}
+body {
+  @extend %font-primary;
+  @include font($size: 1.5rem, $height: 160%);
+	position: relative;
+	// overflow: hidden;
+}
+.pets__body {
+	padding-top: 120px;
+}
+
+.section__padding {
+	padding: 80px 0 100px 0;
+	@include media-tablet {
+		padding: 42px 0 42px 0;
+	}
+}
+
+.section__title {
+	@include font(3.5rem, 130%);
+	color: $color-h2;
+	letter-spacing: 0.06em;
+	text-align: center;
+	@include media-tablet {
+		@include font(2.5rem, 130%);
+	}
+}
+.section {
+	&__title_right {
+		text-align: left;
+		@include media-tablet {
+			text-align: center;
+		}
+	}
+}

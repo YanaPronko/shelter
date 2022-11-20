@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 15;
+  &__title {
+    @include font($size: 3.2rem, $height: 110%);
+    color: $color-primary;
+    letter-spacing: 0.06em;
+  }
+  &__subtitle {
+    @extend %font-additional;
+    @include font($size: 1.3rem, $height: 1.5rem);
+    color: $color-light;
+    letter-spacing: 0.11em;
+  }
+}
+.pets__logo-title {
+  color: $color-h2;
+}
+.pets__logo-subtitle {
+  color: $color-btn-text;
+}
+/* @-moz-document url-prefix() {
+  .logo__title {
+    margin-bottom: 10px;
+  }
+} */
+
+

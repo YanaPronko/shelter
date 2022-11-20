@@ -1,0 +1,39 @@
+.hamburger {
+  @extend %transition;
+  display: none;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 15px;
+  z-index: 12;
+  cursor: pointer;
+  &.open {
+    transform: rotate(90deg);
+  }
+  @include media-tablet {
+    display: block;
+  }
+}
+
+.line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 9px auto;
+  z-index: 15;
+  background-color: $color-primary;
+}
+
+.pets__line {
+  background-color: #000000;
+}
+
+.burger-logo {
+  display: none;
+  margin: 30px 43px 0 10px;
+  >.logo__subtitle {
+    margin-top: 10px;
+  }
+  &.open {
+    display: block;
+  }
+}
